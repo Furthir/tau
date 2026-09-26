@@ -13,6 +13,8 @@ namespace osu.Game.Rulesets.Tau.Objects.Drawables
     {
         protected override TauAction[] Actions { get; } =
         {
+            TauAction.LeftButton,
+            TauAction.RightButton,
             TauAction.HardButton1,
             TauAction.HardButton2
         };

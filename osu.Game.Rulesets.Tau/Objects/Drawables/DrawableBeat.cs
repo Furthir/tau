@@ -64,13 +64,13 @@ namespace osu.Game.Rulesets.Tau.Objects.Drawables
         {
             base.UpdateHitStateTransforms(state);
 
-            const double time_fade_hit = 250, time_fade_miss = 400;
-            var offset = new Vector2(0, -.1f);
+            const double time_fade_hit = 50, time_fade_miss = 50;
+            var offset = new Vector2(0, -.01f);
 
             switch (state)
             {
                 case ArmedState.Hit:
-                    DrawableBox.ScaleTo(2f, time_fade_hit, Easing.OutQuint)
+                    DrawableBox.ScaleTo(1f, time_fade_hit, Easing.OutQuint)
                                .FadeColour(colour.ForHitResult(Result.Type), time_fade_hit, Easing.OutQuint)
                                .MoveToOffset(offset, time_fade_hit, Easing.OutQuint)
                                .FadeOut(time_fade_hit);

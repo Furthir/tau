@@ -8,7 +8,7 @@ namespace osu.Game.Rulesets.Tau.UI.Cursor
     {
         public AbsoluteCursor()
         {
-            Size = new Vector2(40);
+            Size = new Vector2(100);
             Origin = Anchor.Centre;
 
             Child = new CursorPiece();
